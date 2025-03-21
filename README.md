@@ -14,6 +14,8 @@ TODO:
      - Sources ❌
    - Socials
      - Discord ⚠️
+        - Custom Bots ❌
+        - Custom Analytics ❌
      - X ❌
    - Statistics 
      - Google Analytics ⚠️
