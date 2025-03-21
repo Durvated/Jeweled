@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.moving-btn {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #888;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    outline-width:5px;
+    outline-color: #3d334c;
+}
+
+.moving-btn:hover {
+    background: linear-gradient(315deg, #a55eea, #b49bcf);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEFY3K2VB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SEFY3K2VB5');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordBomb Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="lobby">
+  <h1>WordBomb</h1>
+  <input class="inp" type="text" id="player-name" placeholder="Enter your name">
+  <button id="create-game">Create New Game</button>
+  <div>
+    <input class="inp2" type="text" id="game-code" placeholder="Enter game code">
+    <button id="join-game">Join Game</button>
+  </div>
+</div>
+
+<div id="game" class="hidden">
+  <h2 id="player-turn">Waiting for players...</h2>
+  <div id="combo-display">Allowed letters: "er"</div>
+  <div id="timer">
+    <div id="timer-bar"></div>
+  </div>
+  <input type="text" id="word-input" placeholder="Enter a word">
+  <button id="submit-word">Submit</button>
+  <p id="lives"></p>
+  <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

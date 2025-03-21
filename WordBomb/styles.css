@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+input, button {
+    background-color: #e6dbb4;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    transition: 0.7s;
+}
+
+.inp:hover{
+    transform:scale(1.05);
+    transform: rotate3d(1, 1,1 ,27deg);
+}
+
+.inp2:hover {
+    transform:scale(1.05);
+    transform: rotate3d(1, 1,1 ,-27deg);
+}
+button {
+    background-color: #61dafb;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(315deg, #94d3dc, #41abe1);
+}
+
+
+
+#timer {
+    width: 100px;
+    height: 200px;
+    border: 2px solid white;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#timer-bar {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
