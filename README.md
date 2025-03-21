@@ -54,5 +54,5 @@ TODO:
    - Goal
      - Dont let it fail again. ⚠️
 
-<a href="">e</a>
+<a href="https://discord.gg/FTbkTFqMXw">e</a>
 ***are we peaking chat?***
