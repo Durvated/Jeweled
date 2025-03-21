@@ -7,6 +7,8 @@ TODO:
    - Games
      - All Major Games ❌
      - Side Games ❌
+     - Emulator ❌
+     - Organization ❌
    - Proxies
      - Main ❌
      - Secondary ❌
@@ -37,6 +39,11 @@ TODO:
      - Wordbomb ⚠️
      - Hidden Websites ⚠️
      - GC(Gem Clicker) ❌
+     - Rom Hub ❌
+     - Browser ❌
+     - Login? ❌
+     - Organization(CB) ❌
+     - Custom Email ❌
    - More Hosts
      - Netlify ⚠️
      - Heroku ❌
@@ -47,4 +54,5 @@ TODO:
    - Goal
      - Dont let it fail again. ⚠️
 
+<a href="">e</a>
 ***are we peaking chat?***
