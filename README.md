@@ -4,6 +4,9 @@
 
 TODO:
 1. Website
+   - Basic
+      - Pages 🚧
+      - Naviagation 🚧
    - Games
      - All Major Games ❌
      - Side Games ❌
@@ -18,7 +21,7 @@ TODO:
      - Discord 🚧
         - Custom Bots ❌
         - Custom Analytics ❌
-        - Community
+        - Community ❌
      - X ❌
    - Statistics 
      - Google Analytics 🚧
@@ -52,6 +55,8 @@ TODO:
    - Self Hosting(personal)
      - Off PC ❌
      - Webservers ❌
+   - Other
+      - about:blank 🚧
    - Goal
      - Dont let it fail again. ⚠️
 
