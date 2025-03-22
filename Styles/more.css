@@ -14,11 +14,12 @@
     color: white;
     border: none;
     cursor: pointer;
-    transition: background 0.8s ease-in-out;
+    transition: background 0.3s ease-in-out;
     outline-width:5px;
     outline-color: #3d334c;
 }
 
 .moving-btn:hover {
     background: linear-gradient(315deg, #a55eea, #b49bcf);
+    transition: background-color 0.3s ease-in-out;
 }
