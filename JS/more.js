@@ -67,7 +67,7 @@ function isColliding(btn1, btn2) {
 
 setInterval(checkCollisions, 100); // Check for collisions every 100ms
 
-let stop = document.querySelector('.stop-moving-btnmoving-btn');
+let stop = document.querySelector('.stop-moving-btn');
 stop.addEventListener('click', () => {
     isAnimating = !isAnimating;
     if (isAnimating) {
