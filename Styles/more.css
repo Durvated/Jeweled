@@ -14,7 +14,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    transition: background 0.8s ease;
+    transition: background 0.8s ease-in-out;
     outline-width:5px;
     outline-color: #3d334c;
 }
