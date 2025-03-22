@@ -5,26 +5,26 @@
 TODO:
 1. Website
    - Basic
-      - Pages 🚧
-      - Navigation 🚧
+      - Pages ✅
+      - Navigation ✅
    - Games
      - All Major Games ❌
      - Side Games ❌
-     - Emulator ❌
+     - Emulator ✅
      - Organization ❌
    - Proxies
      - Main ❌
      - Secondary ❌
    - Info
-     - Sources ❌
+     - Sources ✅
    - Socials
-     - Discord 🚧
+     - Discord ✅
         - Custom Bots ❌
         - Custom Analytics ❌
         - Community ❌
      - X ❌
    - Statistics 
-     - Google Analytics 🚧
+     - Google Analytics ✅
      - Custom Analytics ❌
    - Style 
      - Less Bland 🚧
@@ -42,7 +42,7 @@ TODO:
    - Custom Projects/Addons
      - Wordbomb 🚧
      - Hidden Websites 🚧
-     - GC(Gem Clicker) ❌
+     - GC(Gem Clicker) 🚧
      - Rom Hub ❌
      - Browser ❌
      - Login? ❌
