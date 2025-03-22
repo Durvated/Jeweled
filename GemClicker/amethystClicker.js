@@ -10,6 +10,7 @@ minerButton.addEventListener('click', () => {
         shards-=miner;
         minerCount+=1
         miner*=1.05;
+        updateScreen()
     }
 })
 amethyst.addEventListener('click', () => {
@@ -23,5 +24,9 @@ cps+=minerCPS
     return cps
 }
 function updateScreen(){
-    shards+=cps;
+    spsSetter()
 }
+
+const interval = setInterval(() => {
+    shards+=cps;
+}, 1000);
