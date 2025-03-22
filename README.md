@@ -15,15 +15,16 @@ TODO:
    - Info
      - Sources ❌
    - Socials
-     - Discord ⚠️
+     - Discord 🚧
         - Custom Bots ❌
         - Custom Analytics ❌
+        - Community
      - X ❌
    - Statistics 
-     - Google Analytics ⚠️
+     - Google Analytics 🚧
      - Custom Analytics ❌
    - Style 
-     - Less Bland ⚠️
+     - Less Bland 🚧
      - Special ❌
    - JS
      - Special Animations and Functions ❌
@@ -36,8 +37,8 @@ TODO:
      - CNAME Hosting ❌
      - local-host:8000 ❌
    - Custom Projects/Addons
-     - Wordbomb ⚠️
-     - Hidden Websites ⚠️
+     - Wordbomb 🚧
+     - Hidden Websites 🚧
      - GC(Gem Clicker) ❌
      - Rom Hub ❌
      - Browser ❌
@@ -45,7 +46,7 @@ TODO:
      - Organization(CB) ❌
      - Custom Email ❌
    - More Hosts
-     - Netlify ⚠️
+     - Netlify 🚧
      - Heroku ❌
      - Render ❌
    - Self Hosting(personal)
