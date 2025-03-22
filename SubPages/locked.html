@@ -21,16 +21,20 @@
 <h1>Sorry, come back later.</h1>
 <p>This feature is still in development.</p>
 <input class="passwd" type="password" placeholder="Enter the Password">
+<button onclick="checkPassword()">Submit</button>
 </body>
 <script src="/JS/empty.js"></script>
-<script>
-  let passwdInput = document.querySelector('.passwd');
-  if (passwdInput.value === CONFIG.PASSWD) {
-    console.log('Welcome, Durvated');
-    alert('Welcome.');
-    window.location.href = 'proxy.html';
-  } else {
-    console.log('sorry, wrong password');
-  }
+<Script>
+function checkPassword() {
+let passwdInput = document.querySelector('.passwd');
+if (passwdInput.value === CONFIG.PASSWD) {
+console.log('Welcome, Durvated');
+alert('Welcome.');
+window.location.href = 'proxy.html';
+} else {
+console.log('Sorry, wrong password');
+alert('Incorrect password. Please try again.');
+}
+}
 </script>
 </html>
