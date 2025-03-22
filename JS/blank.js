@@ -1,33 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
-    history.replaceState({ page: "home" }, "", window.location.href);
-
     const openBlankLink = document.getElementById('openBlankLink');
 
     openBlankLink.addEventListener('click', (event) => {
         event.preventDefault();
 
+        // Create new tab with basic HTML structure
         const newTab = window.open('about:blank', '_blank');
-        if (!newTab) {
-            alert("Couldn't manage to open a new tab :(");
-            return;
-        }
+        if (!newTab) return;
 
-        const newTabBody = newTab.document.body;
-        Object.assign(newTabBody.style, { padding: '0', margin: '0', border: 'hidden' });
+        // Write basic HTML structure to the new tab
+        newTab.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <style>
+                    html, body { margin: 0; padding: 0; height: 100%; }
+                    iframe { border: none; width: 100%; height: 100%; }
+                </style>
+            </head>
+            <body>
+                <iframe id="contentFrame"></iframe>
+            </body>
+            </html>
+        `);
 
-        const iframe = document.createElement('iframe');
-        Object.assign(iframe.style, { width: '100%', height: '100%', border: 'hidden' });
-        iframe.src = window.location.href;
+        // Get reference to the iframe
+        const iframe = newTab.document.getElementById('contentFrame');
 
+        // Set iframe source after a short delay
+        setTimeout(() => {
+            iframe.src = window.location.href;
+        }, 100);
+
+        // Add navigation handling
         iframe.onload = () => {
-            const links = iframe.contentDocument.querySelectorAll('a[target="_blank"]');
-            links.forEach(link => {
-                link.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    iframe.contentWindow.location.href = link.href;
-                });
+            iframe.contentWindow.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A' && e.target.target === '_blank') {
+                    e.preventDefault();
+                    iframe.contentWindow.location.href = e.target.href;
+                }
             });
         };
-
-        newTabBody.appendChild(iframe);
     });
+});
