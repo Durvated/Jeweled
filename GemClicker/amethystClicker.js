@@ -5,7 +5,7 @@ let miner = 15;
 let minerCPS = 1;
 let minerCount = 0;
 amethyst.addEventListener('click', () => {
-    shards++;
+    shards+=1;
     shardCount.textContent = shards;
     updateScreen()
 })
