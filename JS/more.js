@@ -1,3 +1,4 @@
+let isAnimating = true;
 
 class MovingButton {
     constructor(element) {
@@ -32,23 +33,26 @@ const buttons = document.querySelectorAll('.moving-btn');
 const movingButtons = Array.from(buttons).map(btn => new MovingButton(btn));
 
 function animate() {
-    movingButtons.forEach(btn => btn.move());
-    requestAnimationFrame(animate);
+    if (isAnimating) {
+        movingButtons.forEach(btn => btn.move());
+        requestAnimationFrame(animate);
+    }
 }
 
 animate();
 
-// Simple collision detection
 function checkCollisions() {
-    for (let i = 0; i < movingButtons.length; i++) {
-        for (let j = i + 1; j < movingButtons.length; j++) {
-            const btn1 = movingButtons[i];
-            const btn2 = movingButtons[j];
+    if (isAnimating) {
+        for (let i = 0; i < movingButtons.length; i++) {
+            for (let j = i + 1; j < movingButtons.length; j++) {
+                const btn1 = movingButtons[i];
+                const btn2 = movingButtons[j];
 
-            if (isColliding(btn1, btn2)) {
-                // Swap velocities for a simple bounce effect
-                [btn1.vx, btn2.vx] = [btn2.vx, btn1.vx];
-                [btn1.vy, btn2.vy] = [btn2.vy, btn1.vy];
+                if (isColliding(btn1, btn2)) {
+                    // Swap velocities for a simple bounce effect
+                    [btn1.vx, btn2.vx] = [btn2.vx, btn1.vx];
+                    [btn1.vy, btn2.vy] = [btn2.vy, btn1.vy];
+                }
             }
         }
     }
@@ -62,3 +66,14 @@ function isColliding(btn1, btn2) {
 }
 
 setInterval(checkCollisions, 100); // Check for collisions every 100ms
+
+let stop = document.querySelector('.stop-moving-btnmoving-btn');
+stop.addEventListener('click', () => {
+    isAnimating = !isAnimating;
+    if (isAnimating) {
+        animate();
+        stop.textContent = 'Stop';
+    } else {
+        stop.textContent = 'Start';
+    }
+});
