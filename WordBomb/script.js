@@ -1,4 +1,4 @@
-const socket = new WebSocket("wss://iloveyuri.yurigoron.com");
+const socket = new WebSocket("wss://wordbombserver.onrender.com");
 let gameInstance = null;
 
 class WordBombGame {
