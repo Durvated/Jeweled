@@ -106,7 +106,7 @@ body {
     outline: #1d1625 1px solid;
 }
 .btn {
-    background-color: #888;
+    background: linear-gradient(315deg, #4a3f72, #6a42a3);
     border: none;
     color: white;
     padding: 10px 20px;
