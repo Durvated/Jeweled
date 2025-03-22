@@ -6,7 +6,7 @@ TODO:
 1. Website
    - Basic
       - Pages 🚧
-      - Naviagation 🚧
+      - Navigation 🚧
    - Games
      - All Major Games ❌
      - Side Games ❌
