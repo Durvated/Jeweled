@@ -1,4 +1,3 @@
 # Local Netlify folder
 .netlify
-storage.env
 empty.js
