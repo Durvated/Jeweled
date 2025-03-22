@@ -56,7 +56,7 @@ TODO:
      - Off PC ❌
      - Webservers ❌
    - Other
-      - about:blank 🚧
+      - about:blank ✅
    - Goal
      - Dont let it fail again. ⚠️
 
