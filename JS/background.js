@@ -5,3 +5,7 @@ document.addEventListener("mousemove", (e) => {
 
     document.body.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
 });
+
+function back(){
+    window.location.href = "/index.html";
+}

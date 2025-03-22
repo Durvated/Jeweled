@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEFY3K2VB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SEFY3K2VB5');
+  </script>
   <style>
-    body{
+    .back_button {
+      text-align: start;
+    }
+    .container{
       display: flex;
       align-content: center;
       justify-content: center;
@@ -35,10 +47,13 @@
     <title>Sorry, come back later.</title>
 </head>
 <body>
+<a href="/index.html"><button>Back</button></a>
+<div class="container">
 <h1>Sorry, come back later.</h1>
 <p>This feature is still in development.</p>
 <input class="passwd" type="password" placeholder="Enter the Password">
 <button onclick="checkPassword()">Submit</button>
+</div>
 </body>
 <script src="/JS/empty.js"></script>
 <Script>
