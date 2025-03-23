@@ -50,3 +50,11 @@
     font-size: 16px;
     color: black;
 }
+
+.category-title {
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+}
