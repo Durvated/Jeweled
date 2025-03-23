@@ -30,3 +30,7 @@ body {
 .btn:hover {
     background: linear-gradient(315deg, #a55eea, #b49bcf);
 }
+
+.backButton {
+    align-content: stretch;
+}
