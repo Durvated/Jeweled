@@ -8,7 +8,7 @@ body {
 
 a, button {
   transition:all 0.2s;
-  -webkit-transition:all 0.2s; }
+  -webkit-transition:all 0.2s;
 }
 
 h1 br {
