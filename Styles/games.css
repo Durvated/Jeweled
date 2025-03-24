@@ -2,7 +2,8 @@
     background-color: #ccc;
     padding: 20px;
     border-radius: 10px;
-    width: fit-content;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -11,16 +12,18 @@
 }
 
 .image-button-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+    width: 100%;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 0 1 calc(33.333% - 20px); /* Adjust width and margin as needed */
+    max-width: 300px; /* Maximum width of each button container */
+    min-width: 200px; /* Minimum width to prevent too narrow buttons */
+    margin-bottom: 20px;
 }
 
 .image-button {
@@ -51,10 +54,15 @@
     color: black;
 }
 
-.category-title {
-    font-size: 38px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    margin-bottom: 15px;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .button-container {
+        flex: 0 1 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        flex: 0 1 100%;
+    }
 }
