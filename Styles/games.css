@@ -82,3 +82,10 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}

@@ -31,7 +31,9 @@ body {
     background: linear-gradient(315deg, #a55eea, #b49bcf);
 }
 
-.backButton {
-    align-content: start;
-    align-items: start;
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
 }
