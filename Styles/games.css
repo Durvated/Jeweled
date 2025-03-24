@@ -23,6 +23,25 @@ body {
     max-height: 80vh; /* Adjust as needed */
 }
 
+a.button-wrapper {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+a.button-wrapper:hover,
+a.button-wrapper:focus,
+a.button-wrapper:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .image-button-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
