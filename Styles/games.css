@@ -4,7 +4,10 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    overflow-y: auto;
+    overflow: hidden; /* Disables scrolling */
+    margin: 0; /* Removes default margin to avoid layout shifts */
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    width: 100vw; /* Ensures the body takes up the full viewport width */
 }
 
 .container {
