@@ -9,14 +9,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .image-button-row {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
 }
 
 .button-container {
