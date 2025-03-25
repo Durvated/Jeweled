@@ -58,7 +58,7 @@ TODO:
    - Other
       - about:blank ✅
    - Goal
-     - Dont let it fail again. ⚠️
+     - Commit. ⚠️
 
 <a href="https://discord.gg/FTbkTFqMXw">Discord</a> <br>
 ***are we peaking chat?***
