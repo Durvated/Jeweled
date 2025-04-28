@@ -16,15 +16,99 @@
         <title>✨Jeweled✨</title>
     </head>
         <body>
-            <div class="sparkle-container"></div>
+        <!-- HTML -->
+        <div id="gem"></div>
+        <!-- thanks perplexity-->
+        <div class="sparkle-container"></div>
                 <div class="container">
                     <h1 class="title">Jeweled</h1>
                     <div class="box">
                         <a href="/SubPages/games.html"><button class="btn">Games</button></a>
                         <a href="/SubPages/more.html"><button class="btn">More</button></a>
-                        <a href="SubPages/locked.html"><button class="btn">Proxy</button></a>
+                        <a href="/SubPages/locked.html"><button class="btn">Proxy</button></a>
                     </div>
                 </div>
+            <div class="subtext">
+                Your gateway to pass the time!
+            </div>
+
+            <div class="featured">
+                ✨ Featured Game: Rooftop Snipers ✨
+            </div>
+
+            <footer class="footer">
+                made with way too many monsters :sob:
+            </footer>
+        <script>
+            const gem = document.getElementById('gem');
+            let gemX = window.innerWidth / 2;
+            let gemY = window.innerHeight / 2;
+            let velocityX = 0;
+            let velocityY = 0;
+            let mouseX = gemX;
+            let mouseY = gemY;
+
+            const repulsionRadius = 100;
+            const pushStrength = 1.2;
+            const friction = 0.92;
+            const gemSize = 40; // width and height of the gem
+
+            document.addEventListener('mousemove', (event) => {
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+            });
+
+            function update() {
+                // Calculate distance between mouse and gem
+                const dx = mouseX - gemX;
+                const dy = mouseY - gemY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                // If mouse is close enough, push the gem away
+                if (distance < repulsionRadius) {
+                    const angle = Math.atan2(dy, dx);
+                    const force = (repulsionRadius - distance) * pushStrength / repulsionRadius;
+                    velocityX -= Math.cos(angle) * force;
+                    velocityY -= Math.sin(angle) * force;
+                }
+
+                // Update gem position based on velocity
+                gemX += velocityX;
+                gemY += velocityY;
+
+                // Apply friction to slow down velocity
+                velocityX *= friction;
+                velocityY *= friction;
+
+                // --- BOUNCE LOGIC ---
+                // Left or right side
+                if (gemX <= 0) {
+                    gemX = 0;
+                    velocityX *= -0.7; // Reverse and dampen
+                }
+                if (gemX >= window.innerWidth - gemSize) {
+                    gemX = window.innerWidth - gemSize;
+                    velocityX *= -0.7;
+                }
+                // Top or bottom side
+                if (gemY <= 0) {
+                    gemY = 0;
+                    velocityY *= -0.7;
+                }
+                if (gemY >= window.innerHeight - gemSize) {
+                    gemY = window.innerHeight - gemSize;
+                    velocityY *= -0.7;
+                }
+
+                // Move the gem on screen
+                gem.style.left = gemX + 'px';
+                gem.style.top = gemY + 'px';
+
+                requestAnimationFrame(update);
+            }
+
+            update();
+        </script>
         </body>
     <script src="JS/script.js"></script>
 </html>

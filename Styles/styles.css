@@ -138,3 +138,42 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d9c2f2;
+    text-align: center;
+}
+
+#gem {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #e1d3a4, #000555);
+    position: fixed;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.featured {
+    margin-top: 40px;
+    font-size: 1.5em;
+    color: #ffeedd;
+    text-align: center;
+    animation: glow 2s infinite alternate;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 0.9em;
+    color: #aaaaaa;
+    text-align: center;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #b084cc; }
+    100% { text-shadow: 0 0 10px #fff, 0 0 20px #b084cc; }
+}

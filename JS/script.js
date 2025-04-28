@@ -20,5 +20,3 @@ function createSparkle() {
     }, 3000);
 }
 
-
-setInterval(createSparkle, 200);
