@@ -125,7 +125,8 @@ body {
     font-size: 2em; /* Make it big */
     margin-bottom: 10px; /* Add space between title and buttons */
     text-align: center;
-    color: white; /* Adjust color if needed */
+    color: #9cccb7; /* Adjust color if needed */
+    animation: glow 2s infinite alternate;
 }
 
 .container {
@@ -142,7 +143,7 @@ body {
 .subtext {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #d9c2f2;
+    color: #a0b4b6;
     text-align: center;
 }
 
