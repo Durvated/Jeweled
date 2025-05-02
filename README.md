@@ -8,8 +8,8 @@ TODO:
       - Pages ✅
       - Navigation ✅
    - Games
-     - All Major Games ❌
-     - Side Games ❌
+     - All Major Games ✅
+     - Side Games ✅
      - Emulator ✅
      - Organization ❌
    - Proxies
@@ -40,12 +40,12 @@ TODO:
      - CNAME Hosting ❌
      - local-host:8000 ❌
    - Custom Projects/Addons
-     - Wordbomb 🚧
+     - Wordbomb ✅ish
      - Hidden Websites 🚧
      - GC(Gem Clicker) 🚧
      - Rom Hub ❌
      - Browser ❌
-     - Login? ❌
+     - Login? 🚧
      - Organization(CB) ❌
      - Custom Email ❌
    - More Hosts
@@ -53,7 +53,7 @@ TODO:
      - Heroku ❌
      - Render ❌
    - Self Hosting(personal)
-     - Off PC ❌
+     - PC ❌
      - Webservers ❌
    - Other
       - about:blank ✅
