@@ -1,5 +1,7 @@
 @keyframes rotation{
-    0%{transform:rotate3d(0, 1, 0, 360deg)}
+    0%{transform:rotate3d(0, 1, 0, 120deg)}
+    50%{transform:rotate3d(0, 1, 0, 240deg)}
+    100%{transform:rotate3d(0, 1, 0, 360deg)}
 }
 .rotation{
     transition:3s;
