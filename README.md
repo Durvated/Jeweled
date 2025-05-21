@@ -8,10 +8,10 @@ TODO:
       - Pages ✅
       - Navigation ✅
    - Games
-     - All Major Games ✅
+     - All Major Games ✅(excluding mc)
      - Side Games ✅
      - Emulator ✅
-     - Organization ❌
+     - Organization ✅
    - Proxies
      - Main ❌
      - Secondary ❌
@@ -27,7 +27,7 @@ TODO:
      - Google Analytics ✅
      - Custom Analytics ❌
    - Style 
-     - Less Bland 🚧
+     - Less Bland ✅
      - Special ❌
    - JS
      - Special Animations and Functions ❌
@@ -49,7 +49,7 @@ TODO:
      - Organization(CB) ❌
      - Custom Email ❌
    - More Hosts
-     - Netlify 🚧
+     - Netlify ✅
      - Heroku ❌
      - Render ❌
    - Self Hosting(personal)
@@ -60,5 +60,5 @@ TODO:
    - Goal
      - Commit. ⚠️
 
-<a href="https://discord.gg/FTbkTFqMXw">Discord</a> <br>
+<a href="https://discord.gg/xzbWBmm7kT">Discord</a> <br>
 ***are we peaking chat?***
