@@ -26,3 +26,9 @@
     top:100px;
     scale:70%;
 }
+
+#minerButton{
+    position: absolute;
+    top:50px;
+    left:150px;
+}
