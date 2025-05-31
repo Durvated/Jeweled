@@ -31,4 +31,9 @@
     position: absolute;
     top:50px;
     left:150px;
+    transition: 1s;
+}
+
+#minerButton:hover{
+    transform: scale(1.1);
 }
