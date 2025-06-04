@@ -22,7 +22,7 @@ TODO:
         - Custom Bots ❌
         - Custom Analytics ⚠️(why do i want custom things sm)
         - Community ✅
-     - X ⚠️ (x is weird)
+     - X ⚠️ (x is weird!)
    - Statistics 
      - Google Analytics ✅
    - Style 
