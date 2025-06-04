@@ -1,5 +1,3 @@
-console.log('Happy developing ✨')
-//entirely based off this line^
 const sparkleContainer = document.querySelector('.sparkle-container');
 
 

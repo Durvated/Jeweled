@@ -1,13 +1,12 @@
-let amethyst = document.getElementById('amethyst');
-let shards = 0;
+const amethyst = document.getElementById('amethyst');
+const shardCount = document.getElementById('shardCount');
+const cpsDisplay = document.getElementById('cpsDisplay');let shards = 0;
+const minerButton = document.getElementById('minerButton');
 let cps = 0;
-let minerButton = document.getElementById('minerButton');
 let miner = 15;
 let minerCPS = 1;
 let minerCount = 0;
 
-let shardCount = document.getElementById('shardCount');
-let cpsDisplay = document.getElementById('cpsDisplay');
 
 amethyst.addEventListener('click', () => {
     shards += 1;
