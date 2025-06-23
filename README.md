@@ -55,5 +55,4 @@ TODO:
    - Goal
      - Commit. ⚠️️️
 
-<a href="https://discord.gg/xzbWBmm7kT">Discord</a> <br>
 ***are we peaking chat?***
