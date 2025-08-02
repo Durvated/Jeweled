@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles/beta.css">
+    <link rel="icon" href="SRC/favicon.ico">
+    <meta charset="UTF-8">
+    <title>Bejeweled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="chalkboard">
+    <div class="chalk-title" id="chalkTitle" data-text="jEw#lEd">jEw#lEd</div>
+    <div class="gamified-content">
+        <div class="points-bar" id="points">Points: 0</div>
+        <div class="progress-container">
+            <p>Lvl <span id="lvlPart1">1</span><p>
+            <div class="progress-bar">
+                <div class="progress" id="progress" style="width: 0%"></div>
+            </div>
+            <p>Lvl <span id="lvlPart2">2</span></p>
+        </div>
+        <button class="play-btn" onclick="addPoints(10)">Play Game</button>
+        <div class="badge-wrapper" id="badgeWrapper">
+            <div class="badge" id="badge">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" alt="Trophy">
+                <span id="achievement">First Game Played!</span>
+                <span id="achievementDescription">You've played for the first time! </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="JS/beta.js"></script>
+</html>

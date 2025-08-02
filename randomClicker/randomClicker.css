@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+    background: #181818;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chalkboard {
+    width: 80vw;
+    height: 80vh;
+    min-width: 320px;
+    min-height: 300px;
+    max-width: 1200px;
+    max-height: 900px;
+    background: #222 url('https://www.transparenttextures.com/patterns/blackboard.png');
+    background-size: cover;
+    border: 2.5px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 24px #000a;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.chalk-title {
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    color: #f3f3f3;
+    font-family: 'Permanent Marker', 'Comic Sans MS', 'Chalkduster', cursive, sans-serif;
+    font-size: 2.7rem;
+    font-weight: bold;
+    transform: rotate(10deg);
+    letter-spacing: 2px;
+    text-shadow:
+            2px 2px 0 #fff4,
+            0 0 8px #fff2;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.97;
+    z-index: 2;
+    animation: glitch 1s infinite linear alternate-reverse;
+}
+.chalk-title::before,
+.chalk-title::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0.85;
+    pointer-events: none;
+}
+.chalk-title::before {
+    color: #00f6ff;
+    z-index: 3;
+    clip-path: inset(0 0 40% 0);
+    text-shadow: 0 -4px 8px #00f6ff, 0 -2px 0 #00f6ff, 0 0 12px #00f6ff;
+    filter: blur(0.5px) brightness(1.3);
+    animation: glitchTop 0.7s infinite linear alternate-reverse;
+    opacity: 1;
+}
+.chalk-title::after {
+    color: #f0f;
+    z-index: 3;
+    clip-path: inset(63% 0 0 0);
+    text-shadow: 0 -4px 8px #f0f, 0 -2px 0 #f0f, 0 0 12px #f0f;
+    animation: glitchBot 1s infinite linear alternate-reverse;
+    opacity: 1;
+}
+@keyframes glitch {
+    0% { transform: rotate(10deg) translate(0,0);}
+    20% { transform: rotate(10deg) translate(-2px,1px);}
+    40% { transform: rotate(10deg) translate(2px,-1px);}
+    60% { transform: rotate(10deg) translate(-1px,2px);}
+    80% { transform: rotate(10deg) translate(1px,-2px);}
+    100% { transform: rotate(10deg) translate(0,0);}
+}
+@keyframes glitchTop {
+    0% { transform: translate(0,-2px);}
+    20% { transform: translate(-4px,-8px);}
+    40% { transform: translate(-8px,-2px);}
+    60% { transform: translate(2px,-10px);}
+    80% { transform: translate(8px,-6px);}
+    100% { transform: translate(0,-2px);}
+}
+@keyframes glitchBot {
+    0% { transform: translate(0,0);}
+    20% { transform: translate(2px,2px);}
+    40% { transform: translate(4px,-2px);}
+    60% { transform: translate(-2px,4px);}
+    80% { transform: translate(-4px,-4px);}
+    100% { transform: translate(0,0);}
+}
+.gamified-content {
+    padding: 40px 36px 28px 36px;
+    color: #e4e4e4;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    z-index: 1;
+}
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.progress-bar {
+    flex: 1;
+    height: 18px;
+    background: #181818;
+    border-radius: 9px;
+    overflow: hidden;
+    border: 1.5px solid #aaa;
+    margin: 0 8px;
+}
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #7f5af0, #f0a500);
+    transition: width 0.3s;
+    border-radius: 9px 0 0 9px;
+}
+.badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fff2;
+    border-radius: 12px;
+    padding: 8px 16px;
+    gap: 10px;
+    font-weight: bold;
+    color: #ffd700;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 8px #0002;
+}
+.badge img {
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 0 2px #fff8);
+}
+.points-bar {
+    font-size: 1.2rem;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    color: #a6e22e;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.play-btn {
+    background: #7f5af0;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 28px;
+    font-size: 1.1rem;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px #0002;
+}
+.play-btn:hover {
+    background: #f0a500;
+    color: #222;
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.chalkboard::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: url('https://i.imgur.com/7QFQp7k.png');
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+}
+.badge-wrapper {
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(.4,2,.6,1), margin 0.5s cubic-bezier(.4,2,.6,1);
+    max-height: 0;
+    margin-bottom: 0;
+}
+
+.badge-wrapper.show {
+    max-height: 100px;
+    margin-bottom: 16px;
+}
+
+.badge {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.3s, transform 0.5s cubic-bezier(.4,2,.6,1);
+    will-change: opacity, transform;
+}
+
+.badge-wrapper.show .badge {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.achievementDescription {
+    font-size: 2rem;
+}

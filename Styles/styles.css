@@ -113,7 +113,7 @@ body {
     color: white;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 995px;
     transition: background 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

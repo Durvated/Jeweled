@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles/beta.css">
+    <link id="favicon" rel="icon" href="/SRC/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Bejeweled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="stars-bg"></div>
+<div class="nav">
+    <div id="beta-disclaimer"><h1 id="beta-disclaimer-h1">!beta!</h1></div>
+    <div class="chalk-title" id="chalkTitle" data-text="jEw#lEd">jEw#lEd</div>
+    <a href="#" id="gamesButton">Games</a>
+    <a href="#" id="proxyButton">Proxy</a>
+    <a href="#" id="appsButton">Apps</a>
+    <a href="#" id="settingsButton">Settings</a>
+    <a href="#" id="moreButton">More</a>
+    <a href="#" id="catsButton">Cats</a>
+    <a href="#" id="starsButton">Star Control</a>
+</div>
+<div id="chalkboard" class="chalkboard">
+    <div id="catsScreen">
+        <p id="catTextHint">ps: level 100 ;3</p>
+        <div id="catsUpgrades">
+            <button id="catsUpgradeButton">+10 points per click!<span id="upgradePrice"> 50 Points</span></button>
+            <button id="catsAutoclickerButton">Autoclicker!<span id="autoBuyPrice"> 200 Points</span></button>
+            <button id="catsAutoclickerPointsButton">+10 points per AC click!<span id="autoPointIncrease"> 500 Points</span></button>
+            <button id="catsAutoclickerFasterButton">-10 AC interval!<span id="autoIntervalIncrease"> 1000 Points</span></button>
+            <button id="prestigeButton">Prestige</button>
+            <button id="cookiesButton">c-cookies..?<span> 1 prestige point.</span></button>
+            <button id="grandma">grandma.<span> 3 prestige points.</span></button>
+            <button id="lowerGrandmaInterval">Lower Grandmas Interval<span id="grandmaIntervalPrice"> 500 Cookies</span></button>
+            <button id="memories">what is this place..?<span> 10 prestige points, 5000 Cookies, 2M Points.</span></button>
+        </div>
+        <div id="catsStatistics">
+            <p><span id="onScreenStatistics">statostocs</span></p>
+        </div>
+            <div id="memoriesContainer">
+                <p id="statistics">
+                    <span id="statisticsText">Statistics</span>
+                </p>
+                <button id="backButtonMemoriesOut">back.</button>
+            </div>
+        <div id="coolbuttonscat">
+        <button id="setLevel">Set Level</button>
+        <button id="setPointReq">Set Point Requirement</button>
+        <button id="customCatSetter">Set Cat</button>
+            </div>
+        <div id="catPart">
+            <img id="catImage" src="SRC/IMG_6446.gif" alt="Description">
+            <button  id="catButton"><img src="SRC/cat.png" alt="Clickable Image" style="width: 100px; height: 50px;">New Cat<img src="SRC/cat.png" alt="Cat Image Button" style="width: 100px; height: 50px;"></button>
+        </div>
+    <div class="gamified-content">
+        <div id="cookiesAmount">Cookies: 0</div>
+        <div id="prestigeCoinsAmount">Prestige Coins: 0</div>
+        <div class="points-bar" id="points">Points: 0</div>
+        <div id="progcontainer" class="progress-container">
+            <p>Lvl <span id="lvlPart1">1</span><p>
+            <div class="progress-bar">
+                <div class="progress" id="progress" style="width: 0"></div>
+            </div>
+            <p>Lvl <span id="lvlPart2">2</span></p>
+        </div>
+        <button class="play-btn" id="play-btn">click</button>
+        <div class="badge-wrapper" id="badgeWrapper">
+            <div class="badge" id="badge">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" alt="Trophy">
+                <span id="achievement">First click!</span>
+                <span id="achievementDescription">You've clicked for the first time!</span>
+            </div>
+        </div>
+    </div>
+        <div id="prestigeBox">
+            <p>Reset your progress for 20000 more cat pictures!!(and buffs your upgrades, and adds more but eh) <span id="prestigeCost">2000 Points</span></p>
+            <button id="resetButton"><span id="prestigeCheck">Reset?</span></button>
+            <button id="backPrestige">Back</button>
+        </div>
+        <div id="memoriesConfirmationScreen">
+            <p>Warning! THIS IS THE FINAL UPGRADE, YOU WILL NOT BE ABLE TO GO BACK!</p>
+            <p>Cost:10 Prestige Coins + 5000 Cookies + 2M Points</p>
+            <button id="backButtonMemories">Back</button>
+            <button id="restartButton">give in.</button>
+        </div>
+    </div>
+    <div id="moreScreen">
+<a href="SubPages/webretro-standalone.html" id="emulatorButton">Emulator</a>
+</div>     
+    <div id="settingsScreen">
+        <div id="settingsPart">
+        <button class="settings-btn" id="ab" onclick="">A:B Cloaking</button>
+            <button class="settings-btn" id="changeLogo">Change Logo</button>
+            <input id="imageCloak" type="text" placeholder="Cloak image URL">
+            <button class="settings-btn" id="changeName">Change Name</button>
+            <input id="titleCloak" type="text" placeholder="Title">
+            <button class="settings-btn" id="presetCloaks">Presets</button>
+        <div id="presetsBox">
+            <button id="googlePreset">Google</button>
+            <button id="edgePreset">Edge</button>
+            <button id="classlinkPreset">Classlink</button>
+            <button id="classroomPreset">Google Classroom</button>
+        </div>
+            <button class="settings-btn" id="devButton">show cool buttons</button>
+        </div>
+</div>
+    <div id="appsScreen">
+        
+</div>
+    <div id="proxyScreen">
+        <h1 id="wipProxyScreen">WIP</h1>
+        <input placeholder="password" type="password" id="proxyPassword">
+        <button id="loginButton">login</button>
+        <div id="realProxyDiv">
+
+        </div>
+</div>
+    <div id="gameScreen">
+        <label for="gameSearch"></label><input type="text" id="gameSearch" placeholder="Search Games">
+        <p class="category-title">Achievement Unlocked</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Achievement-Unlocked/achievementunlocked/index.html"><button class="image-button"><img src="/Games/Images/Achievement-Unlocked/achievementunlocked/achievementunlocked.png" alt="Achievement Unlocked"></button></a>
+                <p>Achievement Unlocked</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Achievement-Unlocked/achievementunlocked2/index.html"><button class="image-button"><img src="/Games/Images/Achievement-Unlocked/achievementunlocked2/proxy-image.jpg" alt="Achievement Unlocked 2"></button></a>
+                <p>Achievement Unlocked 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Achievement-Unlocked/achievementunlocked3/index.html"><button class="image-button"><img src="/Games/Images/Achievement-Unlocked/achievementunlocked3/proxy-image.png" alt="Achievement Unlocked 3"></button></a>
+                <p>Achievement Unlocked 3</p>
+            </div>
+        </div>
+        <p class="category-title">Point and Click Games</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/click-through/theimpossiblequiz/index.html"><button class="image-button"><img src="/Games/Images/click-through/theimpossiblequiz/proxy-image%20(1).jpg" alt="The Impossible Quiz"></button></a>
+                <p>The Impossible Quiz</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/click-through/theimpossiblequiz2/index.html"><button class="image-button"><img src="/Games/Images/click-through/theimpossiblequiz2/proxy-image.jpg" alt="The Impossible Quiz 2"></button></a>
+                <p>The Impossible Quiz 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/click-through/thereisnogame/index.html"><button class="image-button"><img src="/Games/Images/click-through/thereisnogame/previewtitlenewgrounds-sheet0.png" alt="There Is No Game"></button></a>
+                <p>There Is No Game</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/click-through/worldshardestgame/index.html"><button class="image-button"><img src="/Games/Images/click-through/worldshardestgame/proxy-image%20(1).jpg" alt="Worlds Hardest Game"></button></a>
+                <p>Worlds Hardest Game</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/click-through/worldshardestgame2/index.html"><button class="image-button"><img src="/Games/Images/click-through/worldshardestgame2/proxy-image.png" alt="Worlds Hardest Game 2"></button></a>
+                <p>Worlds Hardest Game 2</p>
+            </div>
+        </div>
+        <p class="category-title">Clicker</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Clicker/hackertype/index.html"><button class="image-button"><img src="/Games/Images/Clicker/hackertype/logo192.png" alt="Hacker Type"></button></a>
+                <p>Hacker Type</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Images/Clicker/particle-clicker-master/index.html"><button class="image-button"><img src="/Games/Images/Clicker/particleclicker/proxy-image.jpg" alt="Particle Clicker"></button></a>
+                <p>Particle Clicker</p>
+            </div>
+        </div>
+        <p class="category-title">Driving</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/driftboss/index.html"><button class="image-button"><img src="/Games/Images/Driving/driftboss/am5tvipl.bmp" alt="Drift Boss"></button></a>
+                <p>Drift Boss</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/drifthunters/index.html"><button class="image-button"><img src="/Games/Images/Driving/drifthunters/ItchIO.jpg" alt="Drift Hunters"></button></a>
+                <p>Drift Hunters</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/driftmania/index.html"><button class="image-button"><img src="/Games/Images/Driving/driftmania/proxy-image.jpg" alt="Drift Mania"></button></a>
+                <p>Drift Mainia</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/eggycar/index.html"><button class="image-button"><img src="/Games/Images/Driving/eggycar/eggy-car.png" alt="Eggy Car"></button></a>
+                <p>Eggy Car</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/madalin-stunt-cars-3/index.html"><button class="image-button"><img src="/Games/Images/Driving/madalin-stunt-cars-3/index.jpg" alt="Madalin Stunt Cars 3"></button></a>
+                <p>Madalin Stunt Cars 3</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/tanukisunset/index.html"><button class="image-button"><img src="/Games/Images/Driving/tanukisunset/tanuki-sunset.png" alt="Tanuki Sunset"></button></a>
+                <p>Tanuki Sunset</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Driving/x-trial-racing/index.html"><button class="image-button"><img src="/Games/Images/Driving/x-trial-racing/splash.png" alt="X-Trial-Racing"></button></a>
+                <p>X-Trial Racing</p>
+            </div>
+        </div>
+        <p class="category-title">Duck Life</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife1/ducklife.png" alt="Duck Life"></button></a>
+                <p>Duck Life</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife1/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife1/ducklife.png" alt="Duck Life 1"></button></a>
+                <p>Duck Life 1</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife2/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife2/ducklife2.png" alt="Duck life 2"></button></a>
+                <p>Duck Life 2</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife3/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife3/duck.png" alt="Duck life 3"></button></a>
+                <p>Duck Life 3</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife4/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife4/splash.jpg" alt="Duck Life 4"></button></a>
+                <p>Duck Life 4</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife5/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife5/proxy-image%20(1).jpg" alt="Duck Life 5"></button></a>
+                <p>Duck Life 5</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Duck-Life/ducklife6/index.html"><button class="image-button"><img src="/Games/Images/Duck-Life/ducklife6/proxy-image.jpg" alt="Duck Life 6"></button></a>
+                <p>Duck Life 6</p>
+            </div>
+        </div>
+        <p class="category-title">Fighting</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Fighting/just-one-boss/index.html"><button class="image-button"><img src="/Games/Images/Fighting/just-one-boss/pv1Gr5.png" alt="J-O-B"></button></a>
+                <p>Just One Boss</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Fighting/ninjavsevilcorp/index.html"><button class="image-button"><img src="/Games/Images/Fighting/ninjavsevilcorp/splash.png" alt="NJEC"></button></a>
+                <p>Ninja vs Evil Corp</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Fighting/pizzatower/index.html"><button class="image-button"><img src="/Games/Images/Fighting/pizzatower/col_pizza-sheet0.png" alt="Pizzatower"></button></a>
+                <p>Pizza Tower</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Fighting/streetfighter2/index.html"><button class="image-button"><img src="/Games/Images/Fighting/streetfighter2/proxy-image%20(1).jpg" alt="SF2"></button></a>
+                <p>Street Fighter 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Fighting/superhot/index.html"><button class="image-button"><img src="/Games/Images/Fighting/superhot/hot.jpg" alt="SuperhOt"></button></a>
+                <p>Superhot</p>
+            </div>
+        </div>
+        <p class="category-title">FNAF</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/FNAF/fnaf/index.html"><button class="image-button"><img src="/Games/Images/FNAF/fnaf/splash.jpg" alt="FNAF"></button></a>
+                <p>FNAF</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/FNAF/fnaf-2/index.html"><button class="image-button"><img src="/Games/Images/FNAF/fnaf-2/splash.webp" alt="FNAF2"></button></a>
+                <p>FNAF 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/FNAF/fnaf-3/index.html"><button class="image-button"><img src="/Games/Images/FNAF/fnaf-3/splash.webp" alt="FNAF3"></button></a>
+                <p>FNAF 3</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/FNAF/fnaf-4/index.html"><button class="image-button"><img src="/Games/Images/FNAF/fnaf-4/splash.webp" alt="FNAF4"></button></a>
+                <p>FNAF 4</p>
+            </div>
+        </div>
+        <p class="category-title">Learn To Fly</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Learn-To-Fly/learntofly/index.html"><button class="image-button"><img src="/Games/Images/Learn-To-Fly/learntofly/learntofly.png" alt="LearnToFly"></button></a>
+                <p>Learn to Fly</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Learn-To-Fly/learntofly2/index.html"><button class="image-button"><img src="/Games/Images/Learn-To-Fly/learntofly2/learn-to-fly-2.jpg" alt="LearnToFly2"></button></a>
+                <p>Learn to Fly 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Learn-To-Fly/learntofly3/index.html"><button class="image-button"><img src="/Games/Images/Learn-To-Fly/learntofly3/proxy-image.jpg" alt="LearnToFly3"></button></a>
+                <p>Learn to Fly 3</p>
+            </div>
+        </div>
+        <p class="category-title">Mario</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/mario/index.html"><button class="image-button"><img src="/Games/Images/Mario/mario/Mario.gif" alt="Mario"></button></a>
+                <p>Mario</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/marioparty3/index.html"><button class="image-button"><img src="/Games/Images/Mario/marioparty3/proxy-image%20(1).jpg" alt="Mario Party 3"></button></a>
+                <p>Mario Party 3</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/mariopartyadvance/index.html"><button class="image-button"><img src="/Games/Images/Mario/mariopartyadvance/proxy-image.jpg" alt="Mario Party Advance"></button></a>
+                <p>Mario Party Advance</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/sm64/index.html"><button class="image-button"><img src="/Games/Images/Mario/sm64/logo.png" alt="Super Mario 64"></button></a>
+                <p>Super Mario 64</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/supermariobros3/index.html"><button class="image-button"><img src="/Games/Images/Mario/supermariobros3/sxpra.jpg" alt="Super Mario Bros 3"></button></a>
+                <p>Super Mario Bros 3</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/supermarioworld/index.html"><button class="image-button"><img src="/Games/Images/Mario/supermarioworld/proxy-image.jpg" alt="Super Mario World"></button></a>
+                <p>Super Mario World</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Mario/unfairmario/index.html"><button class="image-button"><img src="/Games/Images/Mario/unfairmario/sus.jpg" alt="Unfair Mario"></button></a>
+                <p>Unfair Mario</p>
+            </div>
+        </div>
+        <p class="category-title">Moto-X3M</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Moto-X3M/motox3m/index.html"><button class="image-button"><img src="/Games/Images/Moto-X3M/motox3m/splash.jpg" alt="Moto X3M"></button></a>
+                <p>Moto X3M</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Moto-X3M/motox3m2/index.html"><button class="image-button"><img src="/Games/Images/Moto-X3M/motox3m2/proxy-image%20(1).jpg" alt="Moto X3M 2"></button></a>
+                <p>Moto X3M 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Moto-X3M/motox3mpool/index.html"><button class="image-button"><img src="/Games/Images/Moto-X3M/motox3mpool/splash.jpg" alt="Moto X3M Pool"></button></a>
+                <p>Moto X3M Pool</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Moto-X3M/motox3mspooky/index.html"><button class="image-button"><img src="/Games/Images/Moto-X3M/motox3mspooky/proxy-image.jpg" alt="Moto X3M Spooky"></button></a>
+                <p>Moto X3M Spooky</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Moto-X3M/motox3mwinter/index.html"><button class="image-button"><img src="/Games/Images/Moto-X3M/motox3mwinter/download.jpeg" alt="Moto X3M Winter"></button></a>
+                <p>Moto X3M Winter</p>
+            </div>
+        </div>
+        <p class="category-title">Multiplayer</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Multiplayer/getawayshootout/index.html"><button class="image-button"><img src="/Games/Images/Multiplayer/getawayshootout/index.jpg" alt="Get Away Shootout"></button></a>
+                <p>Get Away Shootout</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Multiplayer/gimme-the-airpod/index.html"><button class="image-button"><img src="/Games/Images/Multiplayer/gimme-the-airpod/logo.png" alt="Gimme the Airpod"></button></a>
+                <p>Gimme the Airpod</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Multiplayer/gunmayhem/index.html"><button class="image-button"><img src="/Games/Images/Multiplayer/gunmayhem/icon.png" alt="Gun Mayhem"></button></a>
+                <p>Gun Mayhem</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Multiplayer/gunmayhem2/index.html"><button class="image-button"><img src="/Games/Images/Multiplayer/gunmayhem2/proxy-image%20(1).jpg" alt="Gun Mayhem 2"></button></a>
+                <p>Gun Mayhem 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Multiplayer/rooftop-snipers/index.html"><button class="image-button"><img src="/Games/Images/Multiplayer/rooftop-snipers/preview.png" alt="RTS"></button></a>
+                <p>Roof Top Snipers</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Multiplayer/rooftop2/index.html"><button class="image-button"><img src="/Games/Images/Multiplayer/rooftop2/895b299e7e49558ca383b23648314860.jpg" alt="RTS2"></button></a>
+                <p>Roof Top Snipers 2</p>
+            </div>
+        </div>
+        <p class="category-title">Papas Franchises</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papasbakeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papasbakeria/proxy-image.jpg" alt="Bakeria"></button></a>
+                <p>Papas Bakeria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papasburgeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papasburgeria/ico.png" alt="Burgeria"></button></a>
+                <p>Papas Burgeria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papascheeseria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papascheeseria/proxy-image%20(1).jpg" alt="Cheeseria"></button></a>
+                <p>Papas Cheeseria</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papascupcakeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papascupcakeria/proxy-image.jpg" alt="Cupcakeria"></button></a>
+                <p>Papas Cupcakeria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papasdonuteria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papasdonuteria/proxy-image%20(1).jpg" alt="Donuteria"></button></a>
+                <p>Papas Donuteria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papasfreezeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papasfreezeria/proxy-image.jpg" alt="Freezeria"></button></a>
+                <p>Papas Freezeria</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papashotdoggeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papashotdoggeria/papa_hotdoggeria_splashscreen.jpg" alt="Hot-Doggeria"></button></a>
+                <p>Papas Hot-Doggeria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papaspancakeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papaspancakeria/proxy-image%20(1).jpg" alt="Pancakeria"></button></a>
+                <p>Papas Pancakeria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papaspastaria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papaspastaria/proxy-image.jpg" alt="Pastaria"></button></a>
+                <p>Papas Pastaria</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papaspizzaria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papaspizzaria/papaspizzaria.jpg" alt="Pizzaria"></button></a>
+                <p>Papas Pizzaria</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papasscooperia/index.html"><button class="image-button"><img src="/Games/Images/Papas/papasscooperia/proxy-image%20(1).jpg" alt="Scooperia"></button></a>
+                <p>Papas Scooperia</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papassushiria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papassushiria/proxy-image.jpg" alt="Sushiria"></button></a>
+                <p>Papas Sushiria</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papastacomia/index.html"><button class="image-button"><img src="/Games/Images/Papas/papastacomia/papa_taco_mia_splashscreen.jpg" alt="Tacomia"></button></a>
+                <p>Papas Tacomia</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Papas/papaswingeria/index.html"><button class="image-button"><img src="/Games/Images/Papas/papaswingeria/proxy-image%20(1).jpg" alt="Swingeia"></button></a>
+                <p>Papas Swingeria</p>
+            </div>
+        </div>
+        <p class="category-title">Pokemon</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemondiamond/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemondiamond/proxy-image%20(1).jpg" alt="Diamond"></button></a>
+                <p>Pokemon Diamond</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonemerald/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonemerald/proxy-image.jpg" alt="Emerald"></button></a>
+                <p>Pokemon Emerald</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonfirered/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonfirered/proxy-image%20(1).jpg" alt="Fire Red"></button></a>
+                <p>Pokemon Fire Red</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonleafgreen/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonleafgreen/proxy-image.jpg" alt="Leaf Green"></button></a>
+                <p>Pokemon Leaf Green</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonmysterydungeon/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonmysterydungeon/proxy-image%20(1).jpg" alt="Mystery Dungeon"></button></a>
+                <p>Pokemon Mystery Dungeon</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonplatinum/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonplatinum/proxy-image.jpg" alt="Platinum"></button></a>
+                <p>Pokemon Platinum</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonruby/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonruby/proxy-image%20(1).jpg" alt="Ruby"></button></a>
+                <p>Pokemon Ruby</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonsapphire/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonsapphire/proxy-image.jpg" alt="Sapphire"></button></a>
+                <p>Pokemon Sapphire</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonsnap/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonsnap/proxy-image%20(1).jpg" alt="Snap"></button></a>
+                <p>Pokemon Snap</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonsoulsilver/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonsoulsilver/proxy-image.jpg" alt="Soul Silver"></button></a>
+                <p>Pokemon Soul Silver</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonstadium/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonstadium/proxy-image%20(1).jpg" alt="Stadium"></button></a>
+                <p>Pokemon Stadium</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Pokemon/pokemonunbound/index.html"><button class="image-button"><img src="/Games/Images/Pokemon/pokemonunbound/proxy-image.jpg" alt="Pokemon Unbound"></button></a>
+                <p>Pokemon Unbound</p>
+            </div>
+        </div>
+        <p class="category-title">Popular</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/1v1lol/index.html"><button class="image-button"><img src="/Games/Images/Popular/1v1lol/favicon.png" alt="1v1lol"></button></a>
+                <p>1v1.LOL</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/a-dance-of-fire-and-ice/index.html"><button class="image-button"><img src="/Games/Images/Popular/a-dance-of-fire-and-ice/splash.png" alt="A Dance of Fire and Ice"></button></a>
+                <p>A Dance of Fire and Ice</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/burritobison/index.html"><button class="image-button"><img src="/Games/Images/Popular/burritobison/logo.png" alt="Burrito Bison"></button></a>
+                <p>Burrito Bison</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/cookieclicker-2.052/index.html"><button class="image-button"><img src="/Games/Images/Popular/cookieclicker-2.052/icon.ico" alt="Cookie Clicker"></button></a>
+                <p>Cookie Clicker</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/fridaynightfunkin/index.html"><button class="image-button"><img src="/Games/Images/Popular/fridaynightfunkin/fnf-icon.jpg" alt="Friday Night Funkin"></button></a>
+                <p>Friday Night Funkin</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/monkeymart/index.html"><button class="image-button"><img src="/Games/Images/Popular/monkeymart/bg_loading.png" alt="Monkey Mart"></button></a>
+                <p>Monkey Mart</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/retrobowl/index.html"><button class="image-button"><img src="/Games/Images/Popular/retrobowl/splash.png" alt="Retrobowl"></button></a>
+                <p>Retrobowl</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/slope/index.html"><button class="image-button"><img src="/Games/Images/Popular/slope/slope4.jpeg" alt="Slope"></button></a>
+                <p>Slope</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Popular/wordle/index.html"><button class="image-button"><img src="/Games/Images/Popular/wordle/logo_512x512.png" alt="Wordle"></button></a>
+                <p>Wordle</p>
+            </div>
+        </div>
+        <p class="category-title">Random</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/animalcrossingwildworld/index.html"><button class="image-button"><img src="/Games/Images/Random/animalcrossingwildworld/sxpra.jpg" alt="Animal Crossing Wild World"></button></a>
+                <p>Animal Crossing Wild World</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/flappybird/index.html"><button class="image-button"><img src="/Games/Images/Random/flappybird/proxy-image.jpg" alt="Flappy Bird"></button></a>
+                <p>Flappy Bird</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/georgeandtheprinter/index.html"><button class="image-button"><img src="/Games/Images/Random/georgeandtheprinter/SnDTEn.png" alt="George and The Printer"></button></a>
+                <p>George and The Printer</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/scribblenauts/index.html"><button class="image-button"><img src="/Games/Images/Random/scribblenauts/proxy-image%20(1).jpg" alt="Scribblenauts"></button></a>
+                <p>Scribblenauts</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/shrek2/index.html"><button class="image-button"><img src="/Games/Images/Random/shrek2/proxy-image.jpg" alt="Shrek 2"></button></a>
+                <p>Shrek 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/sortthecourt/index.html"><button class="image-button"><img src="/Games/Images/Random/sortthecourt/splash.png" alt="Sort the Court"></button></a>
+                <p>Sort the Court</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/subway-surfers/index.html"><button class="image-button"><img src="/Games/Images/Random/subway-surfers/splash.jpg" alt="Subway Surfers"></button></a>
+                <p>Subway Surfers</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Random/watermelongame/index.html"><button class="image-button"><img src="/Games/Images/Random/watermelongame/tittle.png" alt="Watermelon Game"></button></a>
+                <p>Water Melon Game</p>
+            </div>
+        </div>
+        <p class="category-title">RedBall</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/RedBall/redball1/index.html"><button class="image-button"><img src="/Games/Images/RedBall/redball1/proxy-image.jpg" alt="Red Ball"></button></a>
+                <p>Red Ball</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/RedBall/redballv2/index.html"><button class="image-button"><img src="/Games/Images/RedBall/redballv2/proxy-image.jpg" alt="Red Ball v2"></button></a>
+                <p>Red Ball v2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/RedBall/redballv3/index.html"><button class="image-button"><img src="/Games/Images/RedBall/redballv3/proxy-image.jpg" alt="Red Ball v3"></button></a>
+                <p>Red Ball v3</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/RedBall/redball3/index.html"><button class="image-button"><img src="/Games/Images/RedBall/redball3/proxy-image%20(1).jpg" alt="Red Ball 3"></button></a>
+                <p>Red Ball 3</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/RedBall/redball4/index.html"><button class="image-button"><img src="/Games/Images/RedBall/redball4/proxy-image%20(1).jpg" alt="Red Ball 4"></button></a>
+                <p>Red Ball 4</p>
+            </div>
+        </div>
+        <p class="category-title">Retro</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/donkeykong64/index.html"><button class="image-button"><img src="/Games/Images/Retro/donkeykong64/proxy-image.jpg" alt="Donkey Kong 64"></button></a>
+                <p>Donkey Kong 64</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/doom64/index.html"><button class="image-button"><img src="/Games/Images/Retro/doom64/proxy-image%20(1).jpg" alt="Doom64"></button></a>
+                <p>Doom 64</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/megamanx/index.html"><button class="image-button"><img src="/Games/Images/Retro/megamanx/proxy-image.jpg" alt="Mega Man X"></button></a>
+                <p>Mega Man X</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/megamanzero/index.html"><button class="image-button"><img src="/Games/Images/Retro/megamanzero/sxpra.png" alt="Mega Man Zero"></button></a>
+                <p>Mega Man Zero</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/metalgearsolid/index.html"><button class="image-button"><img src="/Games/Images/Retro/metalgearsolid/sxpra.jpg" alt="Metal Gear Solid"></button></a>
+                <p>Metal Gear Solid</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/metroid/index.html"><button class="image-button"><img src="/Games/Images/Retro/metroid/proxy-image.jpg" alt="Metroid"></button></a>
+                <p>Metroid</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/minesweeper/index.html"><button class="image-button"><img src="/Games/Images/Retro/minesweeper/minesweeper.png" alt="Minesweeper"></button></a>
+                <p>Minesweeper</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/nintendogs/index.html"><button class="image-button"><img src="/Games/Images/Retro/nintendogs/sxpra.jpg" alt="Nintendogs"></button></a>
+                <p>Nintendogs</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/pacmanworld/index.html"><button class="image-button"><img src="/Games/Images/Retro/pacmanworld/proxy-image.jpg" alt="Pac-Man World"></button></a>
+                <p>Pac-Man World</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Retro/tetris/index.html"><button class="image-button"><img src="/Games/Images/Retro/tetris/logo2.png" alt="Tetris"></button></a>
+                <p>Tetris</p>
+            </div>
+        </div>
+        <p class="category-title">Riddle School</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddleschool/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddleschool/riddleschool.png" alt="Riddle School"></button></a>
+                <p>Riddle School</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddleschool2/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddleschool2/riddleschool2.png" alt="Riddle School 2"></button></a>
+                <p>Riddle School 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddleschool3/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddleschool3/riddleschool3.png" alt="Riddle School 3"></button></a>
+                <p>Riddle School 3</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddleschool4/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddleschool4/riddleschool4.png" alt="Riddle School 4"></button></a>
+                <p>Riddle School 4</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddleschool5/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddleschool5/riddleschool5.png" alt="Riddle School 5"></button></a>
+                <p>Riddle School 5</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddletransfer/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddletransfer/riddletransfer.png" alt="Riddle Transfer"></button></a>
+                <p>Riddle Transfer</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Riddle-School/riddletransfer2/index.html"><button class="image-button"><img src="/Games/Images/Riddle-School/riddletransfer2/riddletransfer2.png" alt="Riddle Transfer 2"></button></a>
+                <p>Riddle Transfer 2</p>
+            </div>
+        </div>
+        <p class="category-title">Run</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Run/run/index.html"><button class="image-button"><img src="/Games/Images/Run/run/run.png" alt="Run"></button></a>
+                <p>Run</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Run/Run%202/index.html"><button class="image-button"><img src="/Games/Images/Run/Run%202/run-2-logo.jpg" alt="Run 2"></button></a>
+                <p>Run 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Run/run%203/Run%203.html"><button class="image-button"><img src="/Games/Images/Run/run%203/image_proxy.jpg" alt="Run 3"></button></a>
+                <p>Run 3</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Run/run4bootleg/index.html"><button class="image-button"><img src="/Games/Images/Run/run4bootleg/55favicon.ico" alt="Run 4"></button></a>
+                <p>Run 4</p>
+            </div>
+        </div>
+        <p class="category-title">The Sims</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Sims/thesims2/index.html"><button class="image-button"><img src="/Games/Images/Sims/thesims2/proxy-image.jpg" alt="The Sims 2"></button></a>
+                <p>Sims 2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Sims/thesims3/index.html"><button class="image-button"><img src="/Games/Images/Sims/thesims3/proxy-image%20(1).jpg" alt="The Sims 3"></button></a>
+                <p>Sims 3</p>
+            </div>
+        </div>
+        <p class="category-title">Stickman</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Stickman/escapingtheprison/index.html"><button class="image-button"><img src="/Games/Images/Stickman/escapingtheprison/escapingtheprison.jpg" alt="Escaping the Prison"></button></a>
+                <p>Escaping the Prison</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Stickman/theheist/index.html"><button class="image-button"><img src="/Games/Images/Stickman/theheist/theheist.jpg" alt="The Heist"></button></a>
+                <p>The Heist</p>
+            </div>
+        </div>
+        <p class="category-title">Team Meat</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Team%20Meat/supermeatboy/index.html"><button class="image-button"><img src="/Games/Images/Team%20Meat/supermeatboy/sxpra.jpg" alt="Super Meat Boy"></button></a>
+                <p>Super Meat Boy</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Team%20Meat/thebindingofisaac/index.html"><button class="image-button"><img src="/Games/Images/Team%20Meat/thebindingofisaac/sxpra%20(1).jpg" alt="The Binding of Isaac"></button></a>
+                <p>The Binding of Isaac</p>
+            </div>
+        </div>
+        <p class="category-title">Vex</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex/index.html"><button class="image-button"><img src="/Games/Images/Vex/vex/proxy-image.jpg" alt="Vex"></button></a>
+                <p>Vex</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex2/vex2.html"><button class="image-button"><img src="/Games/Images/Vex/vex2/BC5ADE2D-5F7A-4352-A7FD-579517F823E4.jpeg" alt="Vex2"></button></a>
+                <p>Vex2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex3/index.html"><button class="image-button"><img src="/Games/Images/Vex/vex3/vex3.png" alt="Vex3"></button></a>
+                <p>Vex3</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex4/index.html"><button class="image-button"><img src="/Games/Images/Vex/vex4/vex4.png" alt="Vex4"></button></a>
+                <p>Vex4</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex5/index.html"><button class="image-button"><img src="/Games/Images/Vex/vex5/vex.jpeg" alt="Vex5"></button></a>
+                <p>Vex5</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex6/index.html"><button class="image-button"><img src="/Games/Images/Vex/vex6/icon.jpeg" alt="Vex6"></button></a>
+                <p>Vex6</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/Vex/vex7/index.html"><button class="image-button"><img src="/Games/Images/Vex/vex7/logo.png" alt="Vex7"></button></a>
+                <p>Vex7</p>
+            </div>
+        </div>
+        <p class="category-title">Minecraft</p>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/MC/Eaglercraft%20Beta%201.3_01.html"><button class="image-button"><img src="/Games/Images/MC.jpg" alt="MC"></button></a>
+                <p>1.3.1</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/MC/Eaglercraft%201.5.2.html"><button class="image-button"><img src="/Games/Images/MC.jpg" alt="MC"></button></a>
+                <p>1.5.2</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/MC/EaglercraftX%201.8.8.html"><button class="image-button"><img src="/Games/Images/MC.jpg" alt="MC"></button></a>
+                <p>1.8.8</p>
+            </div>
+        </div>
+        <div class="image-button-row">
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/MC/precision-1.5.2/index.html"><button class="image-button"><img src="/Games/Images/MC.jpg" alt="MC"></button></a>
+                <p>Precision Client</p>
+            </div>
+            <div class="button-container">
+                <a class="button-wrapper" href="/Games/Games/MC/FuchsiaX.html"><button class="image-button"><img src="/Games/Images/MC.jpg" alt="MC"></button></a>
+                <p>FuchsiaX</p>
+            </div>
+        </div>
+</div>
+    <div id="starControlScreen">
+        <button class="starButtons" id="starControl"><span>Start</span></button>
+        <button class="starButtons" id="interactiveStars">Toggle Interaction</button>
+        <button class="starButtons" id="rainbowStars">gay mode</button>
+        <button class="starCountLogger" id="starCountLogger">Star Logging</button>
+            <button class="kittymodetoggle" id="kittymodetoggle">kittyMode</button>
+    </div>
+<div id="cookieClicker">
+    <div class="time-Bar">
+        <div id="progressThroughTime" style="width: 0"></div>
+    </div>
+    <button>
+        <img src="SRC/cookieClicker/Cookie.png" alt="Clickable Image" style="width:100px; height:50px;">
+    </button>
+
+</div>
+</div>
+</body>
+<script>src="JS/cookieClickerRemake2.js"</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="JS/beta.js"></script>
+<script src="JS/blank2.js"></script>
+</html>

@@ -5,29 +5,28 @@
 TODO:
 1. Website
    - Basic
-      - Pages ✅
-      - Navigation ✅
+      - Pages ✅✅
+      - Navigation ✅✅
    - Games
-     - All Major Games ✅
-     - Side Games ✅
-     - Emulator ✅
-     - Organization ✅
-   - Proxies⚠️(this is so complicated)
+     - All Major Games ✅✅
+     - Side Games ✅✅
+     - Emulator ✅✅
+     - Organization ✅✅
+   - Proxies  ⚠🚧
      - Main ⚠️
      - Secondary ⚠️
    - Info
-     - Sources ✅
+     - Sources 🚧
    - Socials
-     - Discord ✅
+     - Discord ✅✅
         - Custom Bots ❌
         - Custom Analytics ⚠️(why do i want custom things sm)
-        - Community ✅
-     - X ⚠️ (x is weird!)
+        - Community ✅✅
    - Statistics 
-     - Google Analytics ✅
+     - Google Analytics ✅✅
    - Style 
-     - Less Bland ✅
-     - Special ✅
+     - Less Bland ✅✅
+     - Special ✅✅
    - JS
      - Special Animations and Functions ✅
    - Self-Hosting
@@ -37,7 +36,7 @@ TODO:
    - Custom Projects/Addons
      - Wordbomb ✅
      - Hidden Websites ❌
-     - GC(Gem Clicker) 🚧
+     - KC(kitty clicker) ✅
      - Rom Hub ❌
      - Browser ⚠️(this is. complicated. i am not smart enough to make this yet.)
      - Login? ⚠️️️(dbs some other time)
@@ -51,7 +50,7 @@ TODO:
      - PC ⚠️️️(networking+cost)
      - Webservers ⚠️️️(cost)
    - Other
-      - about:blank ✅
+      - about:blank ✅✅
    - Goal
      - Commit. ⚠️️️
 
